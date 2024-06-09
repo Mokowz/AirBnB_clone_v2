@@ -14,7 +14,7 @@ def do_pack():
     path = ("versions/web_static_{}.tgz"
             .format(datetime.strftime(datetime.now(), "%Y%m%d%H%M%S")))
     rsl = local("tar -cvzf {} web_static"
-                   .format(path))
+                .format(path))
 
     if rsl.failed:
         return None

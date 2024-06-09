@@ -7,6 +7,7 @@ from fabric.api import env, local, put, run, runs_once
 
 env.hosts = ['54.82.13.152', '54.144.151.102']
 
+
 @runs_once
 def do_pack():
     """Archives the static files."""
